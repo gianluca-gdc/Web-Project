@@ -1,0 +1,6 @@
+I think a fun project would be a spin of tinder but for networking perhaps or finding a students that have the same interests or courses as you.
+Users should have the ability to login, then create a quick profile with a picture upload and text boxes for entering interests, courses, etc, then
+Another page for displaying common people, and ultimately a match page.
+Solves the age old problem of human connection- creating connections- perhaps re-connect is a cool play on words name for the project
+The intended user is anyone thats lonely and has access to a device, preferably college students
+Sign up, create profile, swipe on individual profiles, and connect.
