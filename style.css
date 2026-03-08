@@ -97,6 +97,19 @@ form input{
     margin: 0 auto;
     text-align:center;
 }
+.Gender {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:10px;
+    margin-left:35px;
+    margin-right:35px
+}
+.Gender button{
+    width: 80px;
+    height:30px;
+}
+
 .login{
     display: block;
     margin: 40px auto 0 auto;
