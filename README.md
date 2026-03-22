@@ -7,7 +7,7 @@ Solves the age old problem of human connection- creating connections- perhaps re
 The intended user is anyone thats lonely and has access to a device, preferably college students
 Sign up, create profile, swipe on individual profiles, and connect.
 
-<img width="1503" height="559" alt="Screenshot 2026-03-08 at 4 07 54 PM" src="https://github.com/user-attachments/assets/ad0803fd-53ab-4dd3-8cb2-7a8fa7679e18" />
+<img width="1503" height="559" alt="Screenshot 2026-03-08 at 4 07 54 PM" src="ERD.png" />
 ERD Business Rules: 
 
 Each USER must have one and only one USERPROFILE.
