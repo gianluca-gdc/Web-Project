@@ -8,39 +8,32 @@ The intended user is anyone thats lonely and has access to a device, preferably 
 Sign up, create profile, swipe on individual profiles, and connect.
 
 <img width="1503" height="559" alt="Screenshot 2026-03-08 at 4 07 54 PM" src="https://github.com/user-attachments/assets/ad0803fd-53ab-4dd3-8cb2-7a8fa7679e18" />
-ERD Business Rules:
-USER ↔ USERPROFILE
-A User must have one and only one UserProfile.
-A UserProfile must belong to one and only one User.
+ERD Business Rules: 
 
-USERPROFILE ↔ PHOTO
-A UserProfile may have one or many Photos.
-A Photo must belong to one and only one UserProfile.
+Each USER must have one and only one USERPROFILE.
+Each USERPROFILE must belong to one and only one USER.
 
-USER ↔ SWIPE (as swiper)
-A User may make one or many Swipes.
-A Swipe must be made by one and only one User (swiper).
+Each USERPROFILE may have one or many PHOTOs.
+Each PHOTO must belong to one and only one USERPROFILE.
 
-USER ↔ SWIPE (as target)
-A User may receive one or many Swipes.
-A Swipe must target one and only one User (target).
+Each USER may have one or many USERINTERESTs.
+Each USERINTEREST must belong to one and only one USER.
 
-USER ↔ MATCH (as user_a)
-A User may be involved in one or many Matches as user_a.
-A Match must have one and only one User as user_a.
+Each INTEREST may have one or many USERINTERESTs.
+Each USERINTEREST must belong to one and only one INTEREST.
 
-USER ↔ MATCH (as user_b)
-A User may be involved in one or many Matches as user_b.
-A Match must have one and only one User as user_b.
+Each USER may swipe on one or many USERs via SWIPE.
+Each SWIPE must belong to one and only one USER (swiper).
+Each SWIPE must target one and only one USER (target).
 
-MATCH ↔ MESSAGETHREAD
-A Match may have one and only one MessageThread.
-A MessageThread must belong to one and only one Match.
+Each USER may be involved in one or many MATCHes.
+Each MATCH must involve exactly two USERs (user_a and user_b).
 
-MESSAGETHREAD ↔ MESSAGE
-A MessageThread may have one or many Messages.
-A Message must belong to one and only one MessageThread.
+Each MATCH may have one and only one MESSAGETHREAD.
+Each MESSAGETHREAD must belong to one and only one MATCH.
 
-USER ↔ MESSAGE (as sender)
-A User may send one or many Messages.
-A Message must be sent by one and only one User (sender).
+Each MESSAGETHREAD may have one or many MESSAGEs.
+Each MESSAGE must belong to one and only one MESSAGETHREAD.
+
+Each USER may send one or many MESSAGEs.
+Each MESSAGE must be sent by one and only one USER.
