@@ -5,50 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Creation Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header>
-        <a class = "sign-out" href = "/login.html">
-            <button type = "button">Sign Out</button>
+        <a class="sign-out" href="/login.html">
+            <button type="button">Sign Out</button>
         </a>
-        <div class = "recreate-header">
-            <h1 class = "recreate-text">Re /Create</h1>
-            <img src="photos/image.png" alt ="yourself-image">
+        <div class="recreate-header">
+            <h1 class="recreate-text">Re /Create</h1>
+            <img src="photos/image.png" alt="yourself-image">
             <br>
         </div>
         <h3>To Re/ Connect</h3>
     </header>
-    <form action = "mainPage.html">
-        
-        <div class = "profile">
-            <div class = "profile-left">
+    <form id="profileForm" action="mainPage.html">
+
+        <div class="profile">
+            <div class="profile-left">
                 <label>Profile Picture:</label>
-                <button>Select Photo</button>
+                <button type="button">Select Photo</button>
             </div>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
             <i class="bi bi-person-circle"></i>
-        <br>
+            <br>
         </div>
-        
-        <label for = "Age">Age:</label>
-        <input type = "Age" id = "Age" name = "Age" required>
+
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" name="Age" min="16" max="99" required>
         <br>
+
         <label for="Gender">Gender:</label>
-            <div class="Gender">
-                <button type="button">Male</button>
-                <button type="button">Female</button>
-            </div>
-        <label for = "Major">Major:</label>
-        <input type = "Major" id = "Major" name = "Major" required>
+        <div class="Gender">
+            <button type="button" class="gender-btn" data-gender="Male">Male</button>
+            <button type="button" class="gender-btn" data-gender="Female">Female</button>
+        </div>
         <br>
-        <label for = "Interests">Interests: (Select at least 3)</label>
+
+        <label for="Major">Major:</label>
+        <input type="text" id="Major" name="Major" required>
         <br>
-        <input class = "interests" type = "Interests" id = "Interests" name = "Interests" required>
+
+        <label for="Interests">Interests: (Select at least 3, comma-separated)</label>
         <br>
-        <button class = "recreate-button" type ="submit">Re /Create</button>
+        <input class="interests" type="text" id="Interests" name="Interests"
+               placeholder="e.g. hiking, coding, music" required>
+        <br>
+
+        <button class="recreate-button" type="submit">Re /Create</button>
     </form>
     <footer>
         <p>&copy; 2026 Re /Connect. All rights reserved.</p>
     </footer>
+    <script src="profile.js"></script>
 </body>
 </html>
