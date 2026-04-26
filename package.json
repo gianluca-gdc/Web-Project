@@ -1,0 +1,29 @@
+{
+  "name": "webproject",
+  "version": "1.0.0",
+  "description": "html/css/javascript web project This web project is a spin on tinder but for networking and finding students that have the same interests or courses as you. Users should have the ability to login, then create a quick profile with a picture upload and text boxes for entering interests, courses, etc, then Another page for displaying common people, and ultimately a match page. Solves the age old problem of human connection- creating connections- perhaps re-connect is a cool play on words name for the project The intended user is anyone thats lonely and has access to a device, preferably college students Sign up, create profile, swipe on individual profiles, and connect.",
+  "homepage": "https://github.com/gianluca-gdc/Web-Project#readme",
+  "bugs": {
+    "url": "https://github.com/gianluca-gdc/Web-Project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gianluca-gdc/Web-Project.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
