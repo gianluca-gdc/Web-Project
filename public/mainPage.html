@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re /Connect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="sign-out" href="/login.html">
+            <button type="button" id="mainSignOut">Sign Out</button>
+        </a>
+        <h1>Re /Connect</h1>
+        <h2>Your profile is ready</h2>
+    </header>
+
+    <form>
+        <p id="welcomeMessage">Welcome back.</p>
+        
+    </form>
+
+    <footer>
+        <p>&copy; 2026 Re /Connect. All rights reserved.</p>
+    </footer>
+    <script>
+        const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+        const userProfile = JSON.parse(localStorage.getItem("userProfile"));
+
+        if (!loggedInUser) {
+            window.location.href = "/login.html";
+        }
+
+        if (loggedInUser && userProfile) {
+            document.getElementById("welcomeMessage").textContent =
+                `Welcome back, ${userProfile.first_name}.`;
+        }
+
+        document.getElementById("mainSignOut").addEventListener("click", function () {
+            localStorage.removeItem("loggedInUser");
+            localStorage.removeItem("userProfile");
+            localStorage.removeItem("profilePhoto");
+        });
+    </script>
+</body>
+</html>

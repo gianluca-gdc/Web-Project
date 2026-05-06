@@ -24,9 +24,11 @@
         <div class="profile">
             <div class="profile-left">
                 <label>Profile Picture:</label>
-                <button type="button">Select Photo</button>
+                <input type="file" id="profilePhotoInput" accept="image/*">
+                <button type="button" id="profilePhotoButton">Select Photo</button>
             </div>
-            <i class="bi bi-person-circle"></i>
+            <i class="bi bi-person-circle" id="profilePhotoIcon"></i>
+            <img id="profilePhotoPreview" class="profile-photo-preview" alt="Selected profile preview">
             <br>
         </div>
 
